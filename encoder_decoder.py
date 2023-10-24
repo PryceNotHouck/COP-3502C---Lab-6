@@ -8,29 +8,29 @@ def encoder(password):
         if temp > 9:
             temp -= 10
         encoded += str(temp)
-    return temp
+    return encoded
 
 
 def main():
     running = True
     while running:
-        print("Menu \n------------- \n1. Encode \n2. Decode \n3. Exit")
-        user = input("Please enter an option: ")
+        print("Menu \n------------- \n1. Encode \n2. Decode \n3. Exit \n")
         valid = False
         while not valid:
+            user = input("Please enter an option: ")
             if user == '1':
                 password = input("Please enter a password to encode: ")
                 password = encoder(password)
-                print("Your password has been encoded and stored!")
+                print("Your password has been encoded and stored! \n")
                 valid = True
-            if user == '2':
+            elif user == '2':
                 pass
                 valid = True
-            if user == '3':
+            elif user == '3':
                 valid = True
                 running = False
             else:
-                print('Please enter a valid option.')
+                print('Please enter a valid option. \n')
 
 
 if __name__ == "__main__":
