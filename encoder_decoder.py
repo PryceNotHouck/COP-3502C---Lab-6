@@ -1,4 +1,5 @@
-# Pryce Houck, Sarah Cedeno
+# Team: Pryce Houck, Sarah Cedeno
+# Pryce Houck
 
 def encoder(password):
     encoded = ""
