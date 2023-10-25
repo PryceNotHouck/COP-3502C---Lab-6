@@ -11,6 +11,16 @@ def encoder(password):
     return encoded
 
 
+def decoder(num):
+    decoded = ""
+    val = 0
+    for i in range(0, len(num)):
+        val = int(num[i])-3
+        if val < 0:
+            val += 10
+        decoded += str(val)
+
+
 def main():
     running = True
     while running:
